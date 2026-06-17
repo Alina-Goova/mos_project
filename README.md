@@ -67,7 +67,7 @@ CREATE DATABASE test_bd;
 
 ### 4. Запустить ETL-пайплайн
 ```bash
-python src/main.py
+python3 src/main.py
 ```
 
 После успешного выполнения вы увидите:
