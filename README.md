@@ -12,6 +12,7 @@
 - pgAdmin 4 (для просмотра данных)
 
 ## Структура проекта
+```bash
 .
 ├── README.md
 ├── data
@@ -32,6 +33,7 @@
     ├── load.py
     ├── main.py
     └── transform.py
+```
 
 ## Как запустить проект
 
@@ -40,30 +42,36 @@
 ```bash
 git clone 
 cd mos_project
+```
 
 ### 2. Создать виртуальное окружение и установить зависимости
 
+```bash
 python3 -m venv venv
 source venv/bin/activate      # для Linux/macOS
 # или venv\Scripts\activate   для Windows
 pip install -r requirements.txt
+```
 
 ### 3. Настроить базу данных PostgreSQL
 
 Убедитесь, что PostgreSQL запущен
 
 Создайте базу данных, например test_bd:
+```postgresql
 CREATE DATABASE test_bd;
+```
 
 Создайте файл .env в корне проекта и укажите строку подключения:
-DATABASE_URL=postgresql://пользователь:пароль@localhost:5432/test_bd
+- DATABASE_URL=postgresql://пользователь:пароль@localhost:5432/test_bd
 
 ### 4. Запустить ETL-пайплайн
-
+```bash
 python src/main.py
+```
 
 После успешного выполнения вы увидите:
 
-Сообщения о загрузке и очистке данных.
-Создание таблиц в DWH (схема public).
-Загрузку данных в таблицы dim_customers, dim_products, dim_date, dim_payments, fact_orders.
+- Сообщения о загрузке и очистке данных.
+- Создание таблиц в DWH (схема public).
+- Загрузку данных в таблицы dim_customers, dim_products, dim_date, dim_payments, fact_orders.
