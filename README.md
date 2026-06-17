@@ -40,7 +40,7 @@
 ### 1. Клонировать репозиторий
 
 ```bash
-git clone 
+git clone https://github.com/Alina-Goova/mos_project
 cd mos_project
 ```
 
