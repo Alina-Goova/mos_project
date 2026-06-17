@@ -1,0 +1,32 @@
+# Виртуальное окружение
+venv/
+env/
+.venv/
+
+# Кэш Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Переменные окружения
+.env
+.env.local
+
+# Логи
+logs/
+*.log
+
+# Файлы IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Системные файлы macOS
+.DS_Store
+Thumbs.db
+
+# Временные файлы
+*.tmp
+*.bak
